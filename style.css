@@ -1,3 +1,146 @@
-body{
-    background-color: aqua;
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0bcfe9;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guest-actions button{
+  margin-right: 20px;
+  height: 30px;
+  justify-content: space-between;
+  margin-left: 20px;
+  border-radius: 6px;
+  width: 100px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0e0c0d;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #050404;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #4829b9;
+}
+
+form button:focus,
+.rsvp-button:focus,
+.remove-button:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+#guest-list {
+  list-style: none;
+}
+
+#guest-list li {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #eee7e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.guest-item{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#guest-list li span {
+  font-weight: 500;
+}
+
+.rsvp-button {
+  padding: 10px 10px;
+  font-size: 16px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+}
+
+.rsvp-button:hover {
+  background-color: #a0ae27;
+}
+
+/* Edit button */
+.edit-button {
+  background-color: #5107ff;
+  color: #333;
+}
+
+.edit-button:hover {
+  background-color: #5107ff;
+}
+
+.remove-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  margin-left:20px ;
+}
+
+.remove-button:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 400px) {
+  form {
+    flex-direction: column;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
+
+
+
