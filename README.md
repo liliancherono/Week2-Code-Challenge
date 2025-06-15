@@ -80,5 +80,5 @@ Edit
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Auther
+## Author
 **Lilian Cherono**
